@@ -1,0 +1,141 @@
+$flex: flex;
+$bodytext: 14px;
+$menucolor: #FFE81F;
+$menutext: 18px;
+$padding: 20px;
+$padding2: $padding*2;
+$center: center;
+$space: space-between;
+$bold: 800;
+$none: none;
+$nul: 0;
+$fuld: 100%;
+
+@mixin menu {
+    display: $flex;
+    list-style: $none;
+    padding: $nul;
+
+    li {
+        a {
+            text-decoration: $none;
+            font-size: $menutext;
+            font-weight: $bold;
+            display: block;
+            padding: $padding;
+            color: $menucolor;
+            transition: color 0.25s;
+        }
+
+        :hover {
+            color: lighten($menucolor, 100%);
+        }
+    }
+}
+
+@mixin background {
+    background-image: url(images/starry-sky.jpg);
+    background-size: cover;
+    background-position: $center $center;
+    background-repeat: no-repeat;
+}
+
+@mixin headings {
+    padding: $padding2;
+    text-align: $center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    margin: $nul;
+    line-height: 1.5;
+}
+
+.title {
+    @include background;
+    color: $menucolor;
+
+    h1 {
+        @include headings;
+        font-size: 56px;
+    }
+
+    .menu {
+        justify-content: $center;
+        @include menu;
+    }
+}
+
+h2 {
+    @include headings;
+    font-size: 36px;
+}
+
+header {
+    padding: $nul $padding2;
+    display: $flex;
+    justify-content: $center;
+
+    p {
+        font-size: $bodytext;
+        padding: $padding2;
+        padding-top: $nul;
+        max-width: 75ch;
+    }
+}
+
+h3 {
+    @include headings;
+    font-size: 28px;
+}
+
+.main {
+    margin: $padding2;
+    margin-top: $nul;
+    display: $flex;
+    justify-content: $space;
+
+    section {
+        width: 32%;
+
+        h4 {
+            @include headings;
+            font-size: $padding;
+        }
+
+        figure {
+            justify-content: $space;
+            align-items: $center;
+
+            img {
+                width: $fuld;
+                height: $fuld;
+                padding-bottom: $padding;
+            }
+
+            figcaption {
+                @extend img;
+                font-size: $bodytext;
+            }
+        }
+    }
+}
+
+footer {
+    @include background;
+    display: $flex;
+    padding: $padding;
+    justify-content: $space;
+
+    p {
+        color: $menucolor;
+        font-weight: $bold;
+        font-size: $menutext;
+        padding: $padding;
+    }
+
+    .menu {
+        @include menu;
+    }
+}

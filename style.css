@@ -1,0 +1,161 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.title {
+  background-image: url(images/starry-sky.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFE81F;
+}
+
+.title h1 {
+  padding: 40px;
+  text-align: center;
+  font-size: 56px;
+}
+
+.title .menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.title .menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  display: block;
+  padding: 20px;
+  color: #FFE81F;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.title .menu li :hover {
+  color: white;
+}
+
+h2 {
+  padding: 40px;
+  text-align: center;
+  font-size: 36px;
+}
+
+header {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header p {
+  font-size: 14px;
+  padding: 40px;
+  padding-top: 0;
+  max-width: 75ch;
+}
+
+h3 {
+  padding: 40px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.main {
+  margin: 40px;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main section {
+  width: 32%;
+}
+
+.main section h4 {
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.main section figure {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main section figure img, .main section figure figcaption {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.main section figure figcaption {
+  font-size: 14px;
+}
+
+footer {
+  background-image: url(images/starry-sky.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  color: #FFE81F;
+  font-weight: 800;
+  font-size: 18px;
+  padding: 20px;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+footer .menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  display: block;
+  padding: 20px;
+  color: #FFE81F;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+footer .menu li :hover {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
